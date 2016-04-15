@@ -1,0 +1,28 @@
+version: 1
+disable_existing_loggers: false
+formatters:
+    prettyFormatter:
+        format: '%(asctime)s [%(levelname)8s] --- %(message)s (%(filename)s:%(lineno)s)'
+        datefmt: '%Y/%m/%d %H:%M:%S'
+loggers:
+    config:
+        level: DEBUG
+        handlers: [console]
+        propagate: false
+    messaging:
+        level: DEBUG
+        handlers: [console]
+        propagate: false
+    __main__:
+        level: DEBUG
+        handlers: [console]
+        propagate: false
+handlers:
+    console:
+        class: logging.StreamHandler
+        formatter: prettyFormatter
+        level: DEBUG
+        stream: ext://sys.stdout
+root:
+    level: WARN
+    handlers: [console]

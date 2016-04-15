@@ -1,0 +1,15 @@
+bridge-ip: "192.168.0.100"
+light-defaults:
+   brightness: 250
+   saturation: 200
+   hue: 15000
+switches:
+   Dash-LivingRoom:
+      light_id: 4
+      mac: "74c246cbc054"
+   Dash-DiningRoom:
+      light_id: 3
+      mac: "74c246e0f5f4"
+   Dash-Bedroom:
+     group_id: 1
+     mac: "f0272d685f47"
