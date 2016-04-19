@@ -5,10 +5,10 @@ light-defaults:
    hue: 15000
 switches:
    Dash-LivingRoom:
-      light_id: 4
+      light_id: 1
       mac: "74c246cbc054"
    Dash-DiningRoom:
-      light_id: 3
+      light_id: 4
       mac: "74c246e0f5f4"
    Dash-Bedroom:
      group_id: 1
